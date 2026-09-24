@@ -57,7 +57,8 @@ def forecast(target_indicator, first_train, last_train, sol, mod, pred_dataframe
     # split in train and test set   
     first_train_index=int(np.argwhere(target_indicator.index==first_train))
     last_train_index=int(np.argwhere(target_indicator.index==last_train))
-    
+
+
     train_dataset_opt = dataset_opt[first_train_index:last_train_index]
     test_dataset_opt = dataset_opt[last_train_index:]
 

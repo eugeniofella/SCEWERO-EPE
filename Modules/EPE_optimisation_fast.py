@@ -25,7 +25,7 @@ def solution_to_selected_cols(solution, p, col_index, max_shift):
         start = int(time_lags[i])
         for j in range(win):
             lag = start + j
-            if 1 <= lag <= max_shift:
+            if 0 <= lag <= max_shift:
                 selected_cols.append(col_index[(i, lag)])
     return selected_cols
 
